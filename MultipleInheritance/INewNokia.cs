@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace MultipleInheritance
 {
-    internal class B
+    internal interface INewNokia
     {
+        void Bluetooth();
+        void Wifi();
     }
 }

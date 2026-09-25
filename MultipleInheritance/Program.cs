@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 namespace MultipleInheritance
 {
     /* Multiple inheritance: It is a process of getting properties/data from more than one base class to single derived class.
+     *                        - multiple inheritance is not possible by using classes which is possible with the help of interface.
     Syntax:- 
-            Class c1  (Base/Parent Class)
+            interface c1  (Base/Parent Class)
             { 
             } 
-            Class c2  (Base/Parent Class)
+            interface c2  (Base/Parent Class)
             {
             }
             Class C:C1,C2   (derived/child Class)
@@ -25,6 +26,12 @@ namespace MultipleInheritance
     {                             
         static void Main(string[] args)
         {
+            NokiaAsha obj = new NokiaAsha();
+            obj.Call();
+            obj.SendSms();
+            obj.Bluetooth();
+            obj.Wifi();
+            Console.ReadLine();
         }
     }
 }

@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace MultipleInheritance
 {
-    internal class A
+    internal interface INokia
     {
+        void SendSms();
+        void Call();
     }
 }
